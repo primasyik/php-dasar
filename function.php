@@ -22,14 +22,17 @@ sekolah();
 echo "<br>";
 
 echo "Menjalankan function menggunakan fungsi if : <br>";
-$nama = true;
-if($nama){
-    function sapa(){
-        echo "Hai.... <br>";
+
+$nama = "budi"; // isi nama
+
+if ($nama) {
+    function sapa($namaOrang) {
+        echo "Hai $namaOrang<br>";
     }
 }
-sapa();
-sapa();
+
+sapa($nama);
+
 
 // function argument
 // dapat mengirim informasi ke function yang ingin kita panggil
